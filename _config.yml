@@ -3,9 +3,6 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
@@ -20,15 +17,16 @@ tagline: AI Software Engineer # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Specialized in Supply Chain and Finance.
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
+
 url: "https://nirajpoudel.github.io" # the base hostname & protocol for your site
 
 github:
   username: nirajpoudel # change to your GitHub username
 
-twitter:
-  username: nirajpoudel # change to your Twitter username
+# twitter:
+#   username: nirajpoudel # change to your Twitter username
+linkedin:
+  username: mrniraj # change to your Linkedin username
 
 social:
   # Change to your full name.
@@ -38,11 +36,8 @@ social:
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/nirajpoudel # change to your Twitter homepage
     - https://github.com/nirajpoudel # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/mrniraj/
 
 # Site Verification Settings
 webmaster_verifications:
