@@ -7,8 +7,6 @@ pin: true
 ---
 
 
-### Dollar cost Averaging (DCA) vs Lumpsum Investing 
-
 Let me be straight with you.
 
 I got tired of it. The YouTube thumbnails with fake Lamborghinis. The "financial gurus" selling $1499 courses promising generational wealth in 18 months. The recycled advice that sounds profound but conveniently ends with a link to buy something. The endless theory with zero accountability because when their strategy fails, they've already cashed out from your course purchase.
@@ -28,7 +26,9 @@ Let's go.
 
 I'm running two different investment strategies simultaneously, with the same ETFs, the same annual commitment, and the same long-term horizon. One uses Dollar Cost Averaging. The other uses Lump Sum investing. By the end of this, we'll have real, comparable data on which approach actually wins — not theory, not a backtest, not a YouTube opinion. Real money. Real time.
 
-## Experiment 1 — Dollar Cost Averaging (DCA)
+## Dollar cost Averaging (DCA) vs Lumpsum Investing 
+
+### Experiment 1 — Dollar Cost Averaging (DCA)
 
 Platform: Wealthsimple TFSA
 
@@ -50,7 +50,7 @@ Annual Contribution Increase: Every January 1st, I increase my weekly contributi
 
 The 10% annual increase serves two purposes. First, it keeps pace with inflation so I'm not quietly investing less in real terms every year. Second, it accelerates the compounding. The combination of returns compounding and contributions growing is where the real long-term power lives.
 
-## Experiment 2 — Lump Sum Investing
+### Experiment 2 — Lump Sum Investing
 
 Platform: Interactive Brokers
 
@@ -112,3 +112,14 @@ What I can say honestly: I believe in the long-term, evidence-based case for low
 ## 📅 Monthly Updates
 
 | Month-Year | ETF | Invested Amount | Gail/Loss |  
+
+
+
+## 🎬 Video Sources
+
+<iframe width="100%" height="400"
+src="https://www.youtube.com/embed/MwuX8JzkPTU?si=7GMZJRxvTnIZFlJZ"
+title="YouTube video"
+frameborder="0"
+allowfullscreen>
+</iframe>
