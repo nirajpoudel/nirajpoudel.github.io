@@ -14,7 +14,6 @@ order: 2
   color: var(--heading-color, var(--text-color));
 }
 .content {
-  font-size: 1rem;
   line-height: 1.75;
   color: var(--text-color);
   max-width: 68rem;
