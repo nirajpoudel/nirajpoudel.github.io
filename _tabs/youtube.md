@@ -354,7 +354,7 @@ order: 4
       <p class="yt-card-desc">Feel bored visiting to WHO website regularly to get update about corona virus?? It's time to make your own covid-19 dashboard and know everything  what's happening in the world. Just a few prerequisites and you good to go </p>
       <div class="yt-card-tags">
         <span class="yt-tag">HTML</span>
-        <span class="yt-tag">API's</span>
+        <span class="yt-tag">APIs</span>
         <span class="yt-tag">Python</span>
         <span class="yt-tag">Django</span>
       </div>
