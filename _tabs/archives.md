@@ -14,9 +14,18 @@ order: 5
   color: var(--heading-color, var(--text-color));
 }
 .content {
+  font-size: 1.08rem;
   line-height: 1.75;
   color: var(--text-color);
   max-width: 68rem;
+  margin-top: 2rem;
+  overflow-wrap: break-word;
+}
+
+@media all and (min-width: 1200px) {
+  .content {
+    font-size: 1.03rem;
+  }
 }
 .content p {
   margin-bottom: 1.5rem;

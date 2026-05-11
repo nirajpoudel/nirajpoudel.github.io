@@ -1,10 +1,23 @@
 ---
 icon: fab fa-youtube
-order: 4
+order: 2
 ---
 
 <style>
 /* ── Shared with about.md — Chirpy CSS variable system ── */
+
+/* ── CONTENT (Chirpy default) ── */
+.content {
+  font-size: 1.08rem;
+  margin-top: 2rem;
+  overflow-wrap: break-word;
+}
+
+@media all and (min-width: 1200px) {
+  .content {
+    font-size: 1.03rem;
+  }
+}
 
 /* ── PAGE HEADER ── */
 .yt-hero {

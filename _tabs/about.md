@@ -13,6 +13,19 @@ order: 1
 /* Typography helpers */
 .ab-mono { font-family: 'Source Code Pro', 'JetBrains Mono', ui-monospace, monospace; }
 
+/* ── CONTENT (Chirpy default) ── */
+.content {
+  font-size: 1.08rem;
+  margin-top: 2rem;
+  overflow-wrap: break-word;
+}
+
+@media all and (min-width: 1200px) {
+  .content {
+    font-size: 1.03rem;
+  }
+}
+
 /* ── HERO ── */
 .ab-hero {
   display: flex;
