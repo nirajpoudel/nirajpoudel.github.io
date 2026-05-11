@@ -293,7 +293,7 @@ order: 4
         <p class="yt-card-title">Experimenting the Snowball Effect. Roadmap $1 to 1M dollars.</p>
         <span class="yt-card-date">April 2025</span>
       </div>
-      <p class="yt-card-desc">Most people underestimate how powerful consistency is. This video breaks down how small actions today can lead to exponential growth tomorrow. If you’re serious about building wealth, financial freedom, and long-term investing, this is a must-watch.
+      <p class="yt-card-desc">Most people underestimate how powerful consistency is. This video breaks down how small actions today can lead to exponential growth tomorrow. If you’re serious about building wealth, financial freedom and long-term investing, this is a must-watch.
 </p>
       <div class="yt-card-tags">
         <span class="yt-tag">DCA</span>
