@@ -432,9 +432,9 @@ title: About
 </style>
 
 <div class="ab-hero-banner">
-  <span class="ab-hero-eyebrow">Logistics · Software · Finance</span>
+  <span class="ab-hero-eyebrow">Technology · Supply Chain  · Personal Finance</span>
   <h2 class="ab-hero-name">👋 Niraj Poudel</h2>
-  <p class="ab-hero-role">Supply Chain &amp; Operations · Software Engineer · Personal Finance Experimenter</p>
+  <p class="ab-hero-role">Data &amp; AI Engineer · Software Engineer · Supply Chain &amp; Personal Finance Enthusiast </p>
   <div class="ab-hero-meta">
     <span><span class="ab-dot"></span>Open to opportunities</span>
     <span>📍 Vancouver, Canada</span>
