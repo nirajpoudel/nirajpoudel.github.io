@@ -1,74 +1,73 @@
 ---
 icon: fas fa-user
 order: 1
+title: About
 ---
 
 <style>
-/* ─────────────────────────────────────────────
-   Chirpy-native About Page — Niraj Poudel
-   Uses Chirpy's CSS variables so it inherits
-   light/dark mode automatically.
-───────────────────────────────────────────── */
+/* ── About Page — Full dark/light mode via Chirpy CSS variables ── */
 
-/* Typography helpers */
-.ab-mono { font-family: 'Source Code Pro', 'JetBrains Mono', ui-monospace, monospace; }
-
-/* ── CONTENT (Chirpy default) ── */
-.content {
-  font-size: 1.08rem;
-  margin-top: 2rem;
-  overflow-wrap: break-word;
+.ab-hero-banner {
+  background: linear-gradient(135deg, #0a2540 0%, #1a3a5c 55%, #0d7377 100%);
+  border-radius: 16px;
+  padding: 48px 36px 40px;
+  margin: 8px 0 40px;
+  position: relative;
+  overflow: hidden;
 }
-
-@media all and (min-width: 1200px) {
-  .content {
-    font-size: 1.03rem;
-  }
+.ab-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
 }
-
-/* ── HERO ── */
-.ab-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  margin-bottom: 2rem;
+.ab-hero-banner::after {
+  content: "";
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%);
+  pointer-events: none;
 }
-.ab-eyebrow {
+.ab-hero-eyebrow {
+  display: inline-block;
   font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--link-color);
-  margin: 0;
-}
-.ab-name {
-  font-size: clamp(1.9rem, 5vw, 2.6rem);
   font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  margin: 0.15rem 0 0;
-  color: var(--heading-color, var(--text-color));
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #10b981;
+  border: 1px solid rgba(16,185,129,0.4);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
 }
-.ab-role {
+.ab-hero-name {
+  color: #fff !important;
+  font-size: 2rem !important;
+  margin: 0 0 8px !important;
+  border: none !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+}
+.ab-hero-role {
+  color: rgba(255,255,255,0.78);
   font-size: 1rem;
-  opacity: 0.65;
-  margin: 0.2rem 0 0.8rem;
+  margin: 0 0 24px;
+  line-height: 1.65;
 }
-.ab-status-row {
+.ab-hero-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem 1.2rem;
   font-size: 0.82rem;
-  opacity: 0.7;
-  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 22px;
 }
 .ab-dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 7px; height: 7px;
   border-radius: 50%;
   background: #22c55e;
   margin-right: 5px;
@@ -87,73 +86,65 @@ order: 1
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
-  border-radius: 6px;
+  padding: 7px 15px;
+  border-radius: 8px;
   font-size: 0.82rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none !important;
-  border: 1px solid var(--border-color, rgba(128,128,128,0.3));
-  color: var(--text-color) !important;
-  background: transparent;
-  transition: border-color 0.18s, color 0.18s, background 0.18s;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff !important;
+  background: rgba(255,255,255,0.10);
+  transition: border-color 0.18s, background 0.18s;
 }
 .ab-link-btn:hover {
-  border-color: var(--link-color);
-  color: var(--link-color) !important;
-  background: color-mix(in srgb, var(--link-color) 8%, transparent);
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.18);
 }
 .ab-link-btn.primary {
-  background: var(--link-color);
-  border-color: var(--link-color);
-  color: #fff !important;
+  background: #10b981;
+  border-color: #10b981;
 }
-.ab-link-btn.primary:hover {
-  opacity: 0.88;
-}
+.ab-link-btn.primary:hover { opacity: 0.88; }
 
-/* ── SECTION HEADER ── */
-.ab-section-head {
+/* ── DIVIDER ── */
+.ab-divider {
   display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin: 2rem 0 1rem;
+  align-items: center;
+  gap: 14px;
+  margin: 44px 0 26px;
 }
-.ab-section-head h2 {
-  margin: 0;
-  font-size: 1.15rem;
+.ab-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+.ab-divider-label {
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
-}
-.ab-section-head .ab-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--link-color);
-  opacity: 0.85;
-}
-.ab-rule {
-  border: none;
-  border-top: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  margin: 0 0 0;
+  letter-spacing: 0.1em;
+  color: var(--body-color);
+  background: var(--main-bg);
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
 }
 
-/* ── TIMELINE (experience) ── */
+/* ── TIMELINE ── */
 .ab-timeline {
   display: flex;
   flex-direction: column;
-  gap: 0;
   position: relative;
   padding-left: 1.5rem;
+  margin: 0 0 8px;
 }
 .ab-timeline::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 10px;
-  bottom: 10px;
+  left: 0; top: 10px; bottom: 10px;
   width: 1px;
-  background: var(--border-color, rgba(128,128,128,0.25));
+  background: linear-gradient(to bottom, #1a6faf, #0d7377, #10b981);
 }
 .ab-tl-item {
   position: relative;
@@ -162,13 +153,11 @@ order: 1
 .ab-tl-item::before {
   content: '';
   position: absolute;
-  left: -4px;
-  top: 10px;
-  width: 9px;
-  height: 9px;
+  left: -4px; top: 10px;
+  width: 9px; height: 9px;
   border-radius: 50%;
   background: var(--link-color);
-  border: 2px solid var(--main-bg, #1b1b1e);
+  border: 2px solid var(--main-bg);
   box-shadow: 0 0 0 1px var(--link-color);
 }
 .ab-tl-header {
@@ -181,48 +170,48 @@ order: 1
 }
 .ab-tl-role {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--heading-color);
   margin: 0;
 }
 .ab-tl-date {
   font-size: 0.72rem;
-  font-weight: 500;
-  padding: 2px 9px;
+  font-weight: 600;
+  padding: 3px 10px;
   border-radius: 20px;
-  background: color-mix(in srgb, var(--link-color) 12%, transparent);
+  background: color-mix(in srgb, var(--link-color) 15%, transparent);
   color: var(--link-color);
-  border: 1px solid color-mix(in srgb, var(--link-color) 25%, transparent);
+  border: 1px solid color-mix(in srgb, var(--link-color) 30%, transparent);
   white-space: nowrap;
-  font-family: 'Source Code Pro', monospace;
 }
-.ab-tl-item ul {
-  margin: 0;
-  padding-left: 1.1rem;
-}
+.ab-tl-item ul { margin: 0; padding-left: 1.1rem; }
 .ab-tl-item li {
-  font-size: 0.875rem;
-  opacity: 0.75;
+  font-size: 0.82rem;
+  color: var(--body-color);
   margin-bottom: 3px;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-/* ── PROJECTS GRID ── */
+/* ── CARDS (projects, focus) ── */
 .ab-proj-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin: 0 0 8px;
 }
 .ab-proj-card {
-  border: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  border-radius: 10px;
-  padding: 1.1rem 1.2rem;
+  background: var(--card-bg);
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  padding: 22px 20px;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  transition: border-color 0.18s;
+  transition: box-shadow .2s, transform .2s;
 }
 .ab-proj-card:hover {
-  border-color: var(--link-color);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
 .ab-proj-top {
   display: flex;
@@ -230,250 +219,226 @@ order: 1
   align-items: flex-start;
 }
 .ab-proj-name {
-  font-size: 0.93rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--heading-color);
   margin: 0;
 }
 .ab-badge {
-  font-size: 0.67rem;
-  font-weight: 600;
-  padding: 2px 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 9px;
   border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;
 }
 .ab-badge-live {
-  background: rgba(34,197,94,0.12);
-  color: #16a34a;
-  border: 1px solid rgba(34,197,94,0.3);
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34,197,94,0.35);
 }
 .ab-badge-wip {
-  background: rgba(234,179,8,0.12);
-  color: #a16207;
-  border: 1px solid rgba(234,179,8,0.3);
+  background: rgba(234,179,8,0.15);
+  color: #eab308;
+  border: 1px solid rgba(234,179,8,0.35);
 }
 .ab-proj-desc {
-  font-size: 0.845rem;
-  opacity: 0.68;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  color: var(--body-color);
+  line-height: 1.6;
   margin: 0;
   flex: 1;
 }
-.ab-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
+.ab-tags { display: flex; flex-wrap: wrap; gap: 4px; }
 .ab-tag {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 0.67rem;
-  font-weight: 500;
-  padding: 2px 7px;
-  border-radius: 4px;
-  background: color-mix(in srgb, var(--link-color) 8%, transparent);
-  color: var(--link-color);
-  border: 1px solid color-mix(in srgb, var(--link-color) 18%, transparent);
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: var(--sidebar-bg);
+  color: var(--body-color);
+  border: 1px solid var(--border-color);
 }
 
 /* ── SKILLS ── */
 .ab-skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.85rem;
+  gap: 18px;
+  margin: 0 0 8px;
 }
 .ab-skill-group {
-  border: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  border-radius: 10px;
-  padding: 1rem 1.1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px 18px;
+  transition: box-shadow .2s, transform .2s;
+}
+.ab-skill-group:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
 .ab-skill-title {
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--link-color);
-  margin-bottom: 0.65rem;
+  margin-bottom: 12px;
 }
-.ab-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
+.ab-pills { display: flex; flex-wrap: wrap; gap: 5px; }
 .ab-pill {
-  font-size: 0.79rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  padding: 3px 10px;
-  border-radius: 5px;
-  border: 1px solid var(--border-color, rgba(128,128,128,0.25));
-  opacity: 0.85;
-  transition: border-color 0.15s, opacity 0.15s;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  color: var(--body-color);
+  background: var(--sidebar-bg);
+  transition: border-color 0.15s;
 }
-.ab-pill:hover {
-  border-color: var(--link-color);
-  opacity: 1;
-}
+.ab-pill:hover { border-color: var(--link-color); }
 
 /* ── CERTS ── */
 .ab-certs {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 12px;
+  margin: 0 0 8px;
 }
 .ab-cert {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  border-radius: 10px;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
   text-decoration: none !important;
   color: var(--text-color) !important;
-  transition: border-color 0.18s;
+  transition: box-shadow .2s, transform .2s;
 }
 .ab-cert:hover {
-  border-color: var(--link-color);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
 .ab-cert-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--link-color) 15%, transparent);
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--link-color) 12%, transparent);
   border: 1px solid color-mix(in srgb, var(--link-color) 25%, transparent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 .ab-cert-info { flex: 1; }
 .ab-cert-name {
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin: 0 0 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0 0 3px;
 }
 .ab-cert-meta {
   font-size: 0.75rem;
-  opacity: 0.55;
+  color: var(--body-color);
   margin: 0;
 }
-.ab-cert-arrow {
-  font-size: 0.8rem;
-  color: var(--link-color);
-  opacity: 0.7;
-}
+.ab-cert-arrow { font-size: 0.9rem; color: var(--link-color); }
 
 /* ── FOCUS GRID ── */
 .ab-focus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 0.85rem;
+  gap: 18px;
+  margin: 0 0 8px;
 }
 .ab-focus-card {
-  border: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  border-radius: 10px;
-  padding: 1rem 1.1rem;
-  transition: border-color 0.18s;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px 18px;
+  transition: box-shadow .2s, transform .2s;
 }
 .ab-focus-card:hover {
-  border-color: var(--link-color);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
-.ab-focus-icon { font-size: 1.3rem; margin-bottom: 0.45rem; }
+.ab-focus-icon { font-size: 1.5rem; margin-bottom: 10px; }
 .ab-focus-name {
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0 0 6px;
 }
 .ab-focus-desc {
-  font-size: 0.795rem;
-  opacity: 0.6;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* ── PHILOSOPHY ── */
-.ab-principles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.85rem;
-}
-.ab-principle {
-  padding: 0.9rem 1rem 0.9rem 1.1rem;
-  border-left: 3px solid var(--link-color);
-  border-radius: 0 8px 8px 0;
-  background: color-mix(in srgb, var(--link-color) 5%, transparent);
-  border-top: 1px solid color-mix(in srgb, var(--link-color) 12%, transparent);
-  border-right: 1px solid color-mix(in srgb, var(--link-color) 12%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--link-color) 12%, transparent);
-}
-.ab-principle strong {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--link-color);
-  margin-bottom: 3px;
-}
-.ab-principle p {
   font-size: 0.82rem;
-  opacity: 0.68;
+  color: var(--body-color);
+  line-height: 1.6;
   margin: 0;
-  line-height: 1.5;
 }
 
-/* ── VIDEO GRID ── */
-.ab-video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+/* ── CLOSING CTA ── */
+.ab-cta {
+  background: linear-gradient(135deg, #0a2540 0%, #0d7377 100%);
+  border-radius: 14px;
+  padding: 36px 28px;
+  margin: 44px 0 8px;
+  text-align: center;
 }
-.ab-video-wrap {
-  border: 1px solid var(--border-color, rgba(128,128,128,0.2));
-  border-radius: 10px;
-  overflow: hidden;
+.ab-cta h3 {
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  margin: 0 0 10px !important;
+  border: none !important;
 }
-.ab-video-label {
-  padding: 0.55rem 0.9rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  opacity: 0.7;
-  display: flex;
+.ab-cta p {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+.ab-cta-divider {
+  width: 40px; height: 2px;
+  background: #10b981;
+  border-radius: 2px;
+  margin: 14px auto;
+}
+.ab-cta-btn {
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  border-top: 1px solid var(--border-color, rgba(128,128,128,0.2));
+  gap: 7px;
+  padding: 9px 20px;
+  background: #10b981;
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none !important;
+  margin: 0 5px 8px;
+  transition: opacity .18s;
 }
-.ab-video-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--link-color);
-  flex-shrink: 0;
-}
-.ab-responsive-video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.ab-responsive-video iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: none;
+.ab-cta-btn:hover { opacity: 0.85; }
+.ab-cta-btn.outline {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Utility */
-.ab-spacer { height: 0.5rem; }
+@media (max-width: 600px) {
+  .ab-hero-banner { padding: 32px 18px 28px; }
+  .ab-hero-name { font-size: 1.55rem !important; }
+}
 </style>
 
-<div class="ab-hero">
-  <!-- <p class="ab-eyebrow">Software Engineer</p>
-  <h1 class="ab-name">Niraj Poudel</h1>
-  <p class="ab-role">Supply Chain &amp; Personal Finance</p> -->
-
-  <div class="ab-status-row">
+<div class="ab-hero-banner">
+  <span class="ab-hero-eyebrow">Logistics · Software · Finance</span>
+  <h2 class="ab-hero-name">👋 Niraj Poudel</h2>
+  <p class="ab-hero-role">Supply Chain &amp; Operations · Software Engineer · Personal Finance Experimenter</p>
+  <div class="ab-hero-meta">
     <span><span class="ab-dot"></span>Open to opportunities</span>
-    <span>📍 Vancouver Canada</span>
-   
+    <span>📍 Vancouver, Canada</span>
   </div>
-
   <div class="ab-links">
     <a href="https://www.linkedin.com/feed/" class="ab-link-btn primary">📄 Resume</a>
     <a href="https://github.com/nirajpoudel" class="ab-link-btn" target="_blank" rel="noopener">
@@ -491,10 +456,7 @@ order: 1
   </div>
 </div>
 
-<div class="ab-section-head">
-  <h2>💼 Experience</h2>
-  <span class="ab-label">Career</span>
-</div>
+<div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">💼 Experience</span><div class="ab-divider-line"></div></div>
 
 <div class="ab-timeline">
   <div class="ab-tl-item">
@@ -503,8 +465,8 @@ order: 1
       <span class="ab-tl-date">Aug 2025 – Present</span>
     </div>
     <ul>
-      <li>Overall: Handle 25+ inbound and 20+ outbound shipments daily, Manage and Optimize Inventory, Forecast demand on ongoing basis. </li>
-      <li>Technology used: Microsoft Office (Excel, Word, Outlook), Max Legacy ERP (internal), Power BI, RF Scanners</li>
+      <li>Handle 25+ inbound and 20+ outbound shipments daily, manage and optimize inventory, forecast demand on an ongoing basis.</li>
+      <li>Technology: Microsoft Office (Excel, Word, Outlook), Max Legacy ERP, Power BI, RF Scanners</li>
     </ul>
   </div>
   <div class="ab-tl-item">
@@ -513,9 +475,8 @@ order: 1
       <span class="ab-tl-date">Jan 2025 – Aug 2025</span>
     </div>
     <ul>
-      <li>Overall: Developed 3 fully functional systems from scratch, saved around $10,000 per month, used by 35+ employees.</li>
-      <li>Technology Used: Python, Flask, Microsoft Azure, SQL, Excel, Power BI, Syncore ERP, OpenAI APIs, Docker. </li>
-      
+      <li>Developed 3 fully functional systems from scratch, saved ~$10,000/month, used by 35+ employees.</li>
+      <li>Technology: Python, Flask, Microsoft Azure, SQL, Excel, Power BI, Syncore ERP, OpenAI APIs, Docker</li>
     </ul>
   </div>
   <div class="ab-tl-item">
@@ -524,18 +485,13 @@ order: 1
       <span class="ab-tl-date">Oct 2023 – Jan 2025</span>
     </div>
     <ul>
-      <li>Overall: Started with loader/unloader and promoted to hub supervisor, Supported 25000+ daily volume, Trained 30+ team members, troubleshooted 100+ devices. </li>
-      <li>Technology Used: Microsoft Office (Word, Excel, Outlook), UPS WorldShip, Symphony WMS, RF scanners</li>
+      <li>Promoted from loader/unloader to hub supervisor, supported 25,000+ daily volume, trained 30+ team members, troubleshot 100+ devices.</li>
+      <li>Technology: Microsoft Office, UPS WorldShip, Symphony WMS, RF Scanners</li>
     </ul>
   </div>
 </div>
 
----
-
-<div class="ab-section-head">
-  <h2>🚀 Projects</h2>
-  <span class="ab-label">Portfolio</span>
-</div>
+<div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">🚀 Projects</span><div class="ab-divider-line"></div></div>
 
 <div class="ab-proj-grid">
   <div class="ab-proj-card">
@@ -543,53 +499,44 @@ order: 1
       <p class="ab-proj-name">Multi Search AI Agent</p>
       <span class="ab-badge ab-badge-live">Live</span>
     </div>
-    <p class="ab-proj-desc">An AI-powered research assistant built with LangGraph that performs searches across multiple engines, analyzes and synthesizes them into one comprehensive, balanced answer.</p>
+    <p class="ab-proj-desc">An AI-powered research assistant built with LangGraph that searches across multiple engines and synthesizes results into one balanced answer.</p>
     <div class="ab-tags">
       <span class="ab-tag">Python</span>
       <span class="ab-tag">Langchain</span>
       <span class="ab-tag">Langgraph</span>
-      <span class="ab-tag">Search Engines</span>
       <span class="ab-tag">AI Agents</span>
     </div>
   </div>
   <div class="ab-proj-card">
     <div class="ab-proj-top">
-      <p class="ab-proj-name">Understanding end to end Supply Chain</p>
+      <p class="ab-proj-name">End-to-End Supply Chain</p>
       <span class="ab-badge ab-badge-wip">Ongoing</span>
     </div>
-    <p class="ab-proj-desc"> I am learning the entire flow of goods, starting from raw material sourcing through production to final delivery and customer satisfaction.</p>
+    <p class="ab-proj-desc">Learning the entire flow of goods — from raw material sourcing through production to final delivery. Written from the execution trenches with Canadian market context.</p>
     <div class="ab-tags">
       <span class="ab-tag">Sourcing</span>
       <span class="ab-tag">Procurement</span>
-      <span class="ab-tag">Manufacturing</span>
-      <span class="ab-tag">Inventory</span>
       <span class="ab-tag">Warehousing</span>
       <span class="ab-tag">Distribution</span>
-      <span class="ab-tag">Fulfilment</span>
       <span class="ab-tag">Analytics</span>
     </div>
   </div>
   <div class="ab-proj-card">
     <div class="ab-proj-top">
       <p class="ab-proj-name">Experimenting Snowball Effect</p>
-      <span class="ab-badge ab-badge-live">Live - Ongoing</span>
+      <span class="ab-badge ab-badge-live">Live – Ongoing</span>
     </div>
-    <p class="ab-proj-desc"> Experimenting Dollar Cost Averaging (DCA) with $100 every single week, on VFV, QQC and XEQT no matter what the market condition is.</p>
+    <p class="ab-proj-desc">Dollar Cost Averaging $100 every week into VFV, QQC and XEQT — no matter what the market does. Fully transparent, updated monthly.</p>
     <div class="ab-tags">
       <span class="ab-tag">Personal Finance</span>
-      <span class="ab-tag">Money</span>
       <span class="ab-tag">Investing</span>
-      <span class="ab-tag">YouTube</span>
+      <span class="ab-tag">DCA</span>
+      <span class="ab-tag">ETFs</span>
     </div>
   </div>
 </div>
 
----
-
-<div class="ab-section-head">
-  <h2>🧠 Skills</h2>
-  <span class="ab-label">Toolkit</span>
-</div>
+<div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">🧠 Skills</span><div class="ab-divider-line"></div></div>
 
 <div class="ab-skills-grid">
   <div class="ab-skill-group">
@@ -621,21 +568,25 @@ order: 1
       <span class="ab-pill">Excel</span>
     </div>
   </div>
+  <div class="ab-skill-group">
+    <div class="ab-skill-title">Supply Chain</div>
+    <div class="ab-pills">
+      <span class="ab-pill">Inventory Mgmt</span>
+      <span class="ab-pill">Demand Forecasting</span>
+      <span class="ab-pill">WMS</span>
+      <span class="ab-pill">Logistics</span>
+    </div>
+  </div>
 </div>
 
----
-
-<div class="ab-section-head">
-  <h2>🏆 Certifications</h2>
-  <span class="ab-label">Credentials</span>
-</div>
+<div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">🏆 Certifications</span><div class="ab-divider-line"></div></div>
 
 <div class="ab-certs">
   <a href="https://coursera.org/verify/your-link" class="ab-cert" target="_blank" rel="noopener">
     <div class="ab-cert-icon">🏅</div>
     <div class="ab-cert-info">
       <p class="ab-cert-name">Cloud Digital Leader Certification</p>
-      <p class="ab-cert-meta">Google &middot; Nov 2024</p>
+      <p class="ab-cert-meta">Google · Nov 2024</p>
     </div>
     <span class="ab-cert-arrow">↗</span>
   </a>
@@ -643,7 +594,7 @@ order: 1
     <div class="ab-cert-icon">🏆</div>
     <div class="ab-cert-info">
       <p class="ab-cert-name">Applied Data Science with Python</p>
-      <p class="ab-cert-meta">University of Michigan / Coursera &middot; 2020</p>
+      <p class="ab-cert-meta">University of Michigan / Coursera · 2020</p>
     </div>
     <span class="ab-cert-arrow">↗</span>
   </a>
@@ -651,18 +602,13 @@ order: 1
     <div class="ab-cert-icon">📖</div>
     <div class="ab-cert-info">
       <p class="ab-cert-name">Machine Learning with Python</p>
-      <p class="ab-cert-meta">Google Cloud / Coursera &middot; 2020</p>
+      <p class="ab-cert-meta">Google Cloud / Coursera · 2020</p>
     </div>
     <span class="ab-cert-arrow">↗</span>
   </a>
 </div>
 
----
-
-<div class="ab-section-head">
-  <h2>🎯 Current Focus</h2>
-  <span class="ab-label">Right Now</span>
-</div>
+<div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">🎯 Current Focus</span><div class="ab-divider-line"></div></div>
 
 <div class="ab-focus-grid">
   <div class="ab-focus-card">
@@ -673,14 +619,19 @@ order: 1
   <div class="ab-focus-card">
     <div class="ab-focus-icon">🌐</div>
     <p class="ab-focus-name">Supply Chain</p>
-    <p class="ab-focus-desc">Understanding end to end process in overall supply chain network.</p>
+    <p class="ab-focus-desc">Understanding the end-to-end process across the entire supply chain network.</p>
   </div>
   <div class="ab-focus-card">
     <div class="ab-focus-icon">💵</div>
-    <p class="ab-focus-name">Personal Finance / Investing</p>
-    <p class="ab-focus-desc">Testing personal finance strategies for long term wealth building.</p>
+    <p class="ab-focus-name">Personal Finance</p>
+    <p class="ab-focus-desc">Testing personal finance strategies for long-term wealth building.</p>
   </div>
 </div>
 
----
-
+<div class="ab-cta">
+  <h3>Let's Connect</h3>
+  <div class="ab-cta-divider"></div>
+  <p>I write about supply chain execution and personal finance from the ground up — no fluff, no gatekeeping. If any of this resonates, let's talk.</p>
+  <a href="https://www.linkedin.com/in/mrniraj/" class="ab-cta-btn" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+  <a href="https://www.youtube.com/@TheNiraj_" class="ab-cta-btn outline" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+</div>
