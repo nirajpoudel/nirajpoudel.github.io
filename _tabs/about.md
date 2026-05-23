@@ -461,7 +461,7 @@ title: About
 <div class="ab-timeline">
   <div class="ab-tl-item">
     <div class="ab-tl-header">
-      <p class="ab-tl-role">Logistics &amp; Operations Coordinator — Cold Storage</p>
+      <p class="ab-tl-role">Logistics &amp; Operations Coordinator — CCS</p>
       <span class="ab-tl-date">Aug 2025 – Present</span>
     </div>
     <ul>
