@@ -225,8 +225,9 @@ order: 4
 
 <!-- ── HERO ── -->
 <div class="yt-hero">
-  <p class="yt-eyebrow">Building in Public</p>
-  <p class="yt-subtitle">Code walkthroughs, project demos, and investment experiment updates — all public, all documented.</p>
+  <p class="yt-eyebrow">Supply Chain · Data · AI — Building in Public</p>
+  <h1 class="yt-title">📺 YouTube</h1>
+  <p class="yt-subtitle">Project walkthroughs, analytics breakdowns, and supply chain career content — built from the floor up, no gatekeeping.</p>
   <a href="https://www.youtube.com/@TheNiraj_" class="yt-channel-btn" target="_blank" rel="noopener">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
     Subscribe on YouTube
@@ -237,8 +238,6 @@ order: 4
 
 <!-- ════════════════════════════════════════
      FEATURED VIDEO
-     Replace YOUR_VIDEO_ID with the YouTube
-     video ID from the URL (e.g. dQw4w9WgXcQ)
 ════════════════════════════════════════ -->
 
 <div class="yt-section-head">
@@ -248,20 +247,21 @@ order: 4
 
 <div class="yt-featured">
   <div class="yt-embed">
-    <iframe src="https://www.youtube.com/embed/ZEoB38K-anM" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.youtube.com/embed/OZLVAsMAGTY" allowfullscreen loading="lazy"></iframe>
   </div>
   <div class="yt-card-body">
     <div class="yt-card-top">
-      <p class="yt-card-title">What If You Invest Right Before a Market Crash? DCA VS Lump Sum.
+      <p class="yt-card-title">The honest explanation of AI that nobody bothered to give you. No engineering degree required.
 </p>
       <span class="yt-card-date">May 2026</span>
     </div>
-    <p class="yt-card-desc">Most people say “just DCA” without actually understanding the tradeoff between DCA and Lump Sum investing.So I decided to compare both strategies using market crash scenarios, volatility, and long-term investing logic.</p>
+    <p class="yt-card-desc">In this video I break down exactly how AI works in plain language. No engineering degree. No confusing jargon. Just real examples that actually make sense.</p>
     <div class="yt-card-tags">
-      <span class="yt-tag">DCA</span>
-      <span class="yt-tag">Lumpsum</span>
-      <span class="yt-tag">Investing</span>
-      <span class="yt-tag">Wealth Generation</span>
+      <span class="yt-tag">AI</span>
+      <span class="yt-tag">LLM</span>
+      <span class="yt-tag">Prompt Engineering</span>
+      <span class="yt-tag">Image Generation</span>
+      <span class="yt-tag">Gen AI</span>
     </div>
   </div>
 </div>
@@ -269,9 +269,67 @@ order: 4
 ---
 
 <!-- ════════════════════════════════════════
+     SERIES: FLOOR TO FORECAST
+     Supply Chain analytics walkthroughs
+     mapped to the roadmap stages.
+════════════════════════════════════════ -->
+
+<div class="yt-section-head">
+  <h2>🏭 Floor to Forecast</h2>
+  <span class="yt-section-label">Series</span>
+</div>
+
+<div class="yt-series-badge"><span class="yt-series-dot"></span>Ongoing Series</div>
+
+<div class="yt-grid">
+
+  <!-- Add Floor to Forecast video episodes here as they publish -->
+  <!-- Copy the block below and update src, title, date, desc, tags -->
+
+  <!--
+  <div class="yt-card">
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="yt-card-body">
+      <div class="yt-card-top">
+        <p class="yt-card-title">Episode Title Here</p>
+        <span class="yt-card-date">Month Year</span>
+      </div>
+      <p class="yt-card-desc">Description of the episode.</p>
+      <div class="yt-card-tags">
+        <span class="yt-tag">Tag</span>
+      </div>
+    </div>
+  </div>
+  -->
+
+</div>
+
+---
+
+<!-- ════════════════════════════════════════
+     SERIES: SUPPLY CHAIN ANALYTICS
+     Project builds, SQL, Power BI, Python
+════════════════════════════════════════ -->
+
+<div class="yt-section-head">
+  <h2>📊 Supply Chain Analytics</h2>
+  <span class="yt-section-label">Series</span>
+</div>
+
+<div class="yt-series-badge"><span class="yt-series-dot"></span>Ongoing Series</div>
+
+<div class="yt-grid">
+
+  <!-- Add supply chain analytics project videos here -->
+
+</div>
+
+---
+
+<!-- ════════════════════════════════════════
      SERIES: INVESTMENT EXPERIMENT
-     Add new episodes by copying one
-     .yt-card block and updating the content.
 ════════════════════════════════════════ -->
 
 <div class="yt-section-head">
@@ -283,43 +341,39 @@ order: 4
 
 <div class="yt-grid">
 
-  <!-- Episode 1 — duplicate this block to add more -->
   <div class="yt-card">
     <div class="yt-embed">
       <iframe src="https://www.youtube.com/embed/MwuX8JzkPTU" allowfullscreen loading="lazy"></iframe>
     </div>
     <div class="yt-card-body">
       <div class="yt-card-top">
-        <p class="yt-card-title">Experimenting the Snowball Effect. Roadmap $1 to 1M dollars.</p>
+        <p class="yt-card-title">Experimenting the Snowball Effect. Roadmap $1 to $1M.</p>
         <span class="yt-card-date">April 2025</span>
       </div>
-      <p class="yt-card-desc">Most people underestimate how powerful consistency is. This video breaks down how small actions today can lead to exponential growth tomorrow. If you’re serious about building wealth, financial freedom and long-term investing, this is a must-watch.
-</p>
+      <p class="yt-card-desc">The same compounding logic that grows wealth also applies to skills. This video breaks down consistency, exponential growth, and long-term thinking — principles that carry directly into supply chain planning and forecasting.</p>
       <div class="yt-card-tags">
         <span class="yt-tag">DCA</span>
         <span class="yt-tag">Investing</span>
         <span class="yt-tag">Personal Finance</span>
+        <span class="yt-tag">Compounding</span>
       </div>
     </div>
   </div>
-
-
-  <!-- ↓ ADD MORE EPISODES HERE — copy the block above ↓ -->
 
 </div>
 
 ---
 
 <!-- ════════════════════════════════════════
-     SERIES: PROJECT BUILDS
+     ALL VIDEOS — ONE-OFFS
 ════════════════════════════════════════ -->
 
 <div class="yt-section-head">
-  <h2>🔨All Videos</h2>
-  <span class="yt-section-label">ONE-OFFS</span>
+  <h2>🔨 All Videos</h2>
+  <span class="yt-section-label">One-Offs</span>
 </div>
 
-<div class="yt-series-badge"><span class="yt-series-dot"></span>Ongoing Contents</div>
+<div class="yt-series-badge"><span class="yt-series-dot"></span>Ongoing Content</div>
 
 <div class="yt-grid">
 
@@ -329,15 +383,15 @@ order: 4
     </div>
     <div class="yt-card-body">
       <div class="yt-card-top">
-        <p class="yt-card-title">Facial Recognition with Artificial Neural Network and Convolution Neural Network.</p>
+        <p class="yt-card-title">Facial Recognition with ANN and CNN</p>
         <span class="yt-card-date">Mar 2021</span>
       </div>
-      <p class="yt-card-desc">Artificial intelligence is the impacting life in every field. So today in this video i am going to make facial recognition bio-metric system using artificial neural network and convolution neural network.
-</p>
+      <p class="yt-card-desc">An early project building a biometric system using Artificial Neural Networks and Convolutional Neural Networks — foundational deep learning that now informs the AI work I apply to supply chain operations.</p>
       <div class="yt-card-tags">
         <span class="yt-tag">Deep Learning</span>
         <span class="yt-tag">Python</span>
-        <span class="yt-tag">Facial Recognition</span>
+        <span class="yt-tag">Neural Networks</span>
+        <span class="yt-tag">AI</span>
       </div>
     </div>
   </div>
@@ -351,18 +405,24 @@ order: 4
         <p class="yt-card-title">COVID-19 Data Interactive Dashboard</p>
         <span class="yt-card-date">Mar 2021</span>
       </div>
-      <p class="yt-card-desc">Feel bored visiting to WHO website regularly to get update about corona virus?? It's time to make your own covid-19 dashboard and know everything  what's happening in the world. Just a few prerequisites and you good to go </p>
+      <p class="yt-card-desc">Built a live COVID-19 dashboard pulling from public APIs — the same data pipeline and visualization thinking I now apply to inventory KPI dashboards and supply chain reporting in Power BI.</p>
       <div class="yt-card-tags">
-        <span class="yt-tag">HTML</span>
-        <span class="yt-tag">APIs</span>
         <span class="yt-tag">Python</span>
         <span class="yt-tag">Django</span>
+        <span class="yt-tag">APIs</span>
+        <span class="yt-tag">Dashboard</span>
+        <span class="yt-tag">Data Viz</span>
       </div>
     </div>
   </div>
 
-  <!-- ↓ ADD MORE PROJECT VIDEOS HERE ↓ -->
+  <!-- ↓ ADD MORE VIDEOS HERE — copy the block above ↓ -->
 
 </div>
 
 ---
+
+<div class="yt-howto">
+  <strong>This channel is being built alongside the Floor to Forecast roadmap.</strong>
+  Every video maps to a real stage of the supply chain analytics journey — from Excel fundamentals to Python, SQL, Power BI, forecasting and AI. If you are a warehouse worker, retail associate, or logistics coordinator figuring out where to start — subscribe and drop a comment. Your question might become the next video.
+</div>
