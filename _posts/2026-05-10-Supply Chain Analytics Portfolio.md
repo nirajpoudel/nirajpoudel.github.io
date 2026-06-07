@@ -3,7 +3,7 @@ title: Supply Chain Analytics Portfolio
 date: 2026-06-07 10:00:00
 categories: [Projects]
 tags: [supply-chain, analytics, power-bi, sql, excel, inventory, kpi, warehouse]
-pin: false
+pin: true
 comments: true
 ---
 
@@ -84,12 +84,19 @@ comments: true
 
 <div class="sc-hero">
   <h2>📊 Supply Chain Analytics Portfolio</h2>
-  <p>Real projects built from real operations — every one of these started as a problem on a warehouse floor, not a textbook prompt. Built to show what supply chain analytics actually looks like in practice.</p>
-  <span class="sc-hero-badge">📦 Inventory</span>
-  <span class="sc-hero-badge">🚚 Logistics</span>
-  <span class="sc-hero-badge">📊 Power BI</span>
-  <span class="sc-hero-badge">🗄️ SQL</span>
-  <span class="sc-hero-badge">📁 Excel</span>
+  <p>Real projects built from real operations — every one of these started as a problem on a floor, not a textbook prompt. Built to show what supply chain analytics actually looks like in practice.</p>
+  <span class="sc-hero-badge">📦 EDA</span>
+  <span class="sc-hero-badge">🚚 Sales Forecasting</span>
+  <span class="sc-hero-badge">📊 Inventory Optimization</span>
+  <span class="sc-hero-badge">🗄️ Demand Planning & Forecasting</span>
+  <span class="sc-hero-badge">📁 Replenishment Planning</span>
+  <span class="sc-hero-badge">📝 Excel</span>
+  <span class="sc-hero-badge">🛢 SQL</span>
+  <span class="sc-hero-badge"></> Python</span>
+  <span class="sc-hero-badge">📊 PowerBI</span>
+  <span class="sc-hero-badge">🤖 Machine Learning</span>
+  <span class="sc-hero-badge">֎ GenerativeAI</span>
+  
 </div>
 
 <div class="sc-story">
@@ -97,7 +104,7 @@ comments: true
   <p class="sc-story-text">
     Most analytics portfolios are built by people who have never touched a pallet, worked a WMS, or made a same-day inventory decision under pressure. <strong>This one is different.</strong><br><br>
     Every project here is grounded in a problem that warehouse workers, coordinators, and operations staff deal with daily — stockouts, receiving backlogs, forecast misses, slow-moving SKUs, carrier delays. The goal is not just to show technical skill. <strong>It is to show that your floor experience is the foundation of great supply chain analytics</strong> — and that anyone in operations can learn to build this.<br><br>
-    Each project in this portfolio maps directly to a stage in the <a href="#" style="color:var(--link-color);text-decoration:none;font-weight:600;">Floor to Forecast roadmap ↗</a>. If you are following the roadmap, these are the deliverables.
+    Each project in this portfolio maps directly to a stage in the <a href="https://nirajpoudel.com/posts/Supply-Chain-Floor-to-Forecast-Roadmap/" style="color:var(--link-color);text-decoration:none;font-weight:600;">Floor to Forecast roadmap ↗</a>. If you are following the roadmap, these are the deliverables.
   </p>
 </div>
 
@@ -108,23 +115,30 @@ comments: true
     <div class="sc-card-header">
       <div class="sc-card-icon bg-teal-soft">📦</div>
       <div>
-        <p class="sc-card-title">Inventory Management</p>
-        <p class="sc-card-sub">The foundation of every supply chain role</p>
+        <p class="sc-card-title">Explanatory Data Analysis</p>
+       
       </div>
     </div>
-    <p class="sc-card-body">How to measure stock accuracy, identify slow-moving SKUs, calculate days on hand, and build reorder logic — the things you already do on shift, now quantified and visualized.</p>
   </div>
   <div class="sc-card">
     <div class="sc-card-header">
       <div class="sc-card-icon bg-blue-soft">🚚</div>
       <div>
-        <p class="sc-card-title">Logistics Performance</p>
-        <p class="sc-card-sub">Turning shipment data into decisions</p>
+        <p class="sc-card-title">Sales Performance Analysis</p>
+
       </div>
     </div>
-    <p class="sc-card-body">Carrier on-time rates, inbound vs outbound volume trends, dock-to-stock time, freight cost variance — the metrics that tell you whether your operation is actually running well.</p>
   </div>
   <div class="sc-card">
+    <div class="sc-card-header">
+      <div class="sc-card-icon bg-orange-soft">🔮</div>
+      <div>
+        <p class="sc-card-title">Inventory Optimization</p>
+       
+      </div>
+    </div>
+    </div>
+     <div class="sc-card">
     <div class="sc-card-header">
       <div class="sc-card-icon bg-orange-soft">🔮</div>
       <div>
@@ -132,23 +146,30 @@ comments: true
         <p class="sc-card-sub">Predicting what the floor will need next</p>
       </div>
     </div>
-    <p class="sc-card-body">Moving averages, exponential smoothing, WMAPE, forecast bias — not academic concepts, but tools that answer one question: how much should we order and when.</p>
   </div>
+
+
+  <div class="sc-card">
+    <div class="sc-card-header">
+      <div class="sc-card-icon bg-orange-soft">🔮</div>
+      <div>
+        <p class="sc-card-title">Replenishment Planning</p>
+      </div>
+    </div>
+    </div>
   <div class="sc-card">
     <div class="sc-card-header">
       <div class="sc-card-icon bg-purple-soft">📊</div>
       <div>
         <p class="sc-card-title">KPI Dashboards</p>
-        <p class="sc-card-sub">Making the data visible to everyone</p>
       </div>
     </div>
-    <p class="sc-card-body">Fill rate, OTIF, receiving accuracy, labour productivity — building dashboards that give supervisors and managers the right signal without noise, using Power BI and Excel.</p>
+
   </div>
 </div>
 
 <div class="sc-stats">
-  <div class="sc-stat"><div class="sc-stat-num text-teal">5+</div><div class="sc-stat-label">Projects covering the full supply chain lifecycle</div></div>
-  <div class="sc-stat"><div class="sc-stat-num text-blue">Real</div><div class="sc-stat-label">Data inspired by live cold storage operations</div></div>
+  <div class="sc-stat"><div class="sc-stat-num text-blue">Real</div><div class="sc-stat-label">Projects covering the full supply chain lifecycle</div></div>
   <div class="sc-stat"><div class="sc-stat-num text-orange">0</div><div class="sc-stat-label">Staged datasets. Every problem came from the floor first.</div></div>
   <div class="sc-stat"><div class="sc-stat-num text-green">Open</div><div class="sc-stat-label">All projects public on GitHub — fork, follow, build along</div></div>
 </div>

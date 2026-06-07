@@ -1,5 +1,5 @@
 ---
-title: Supply Chain — Floor to Forecast
+title: Supply Chain — Floor to Forecast Roadmap
 date: 2026-06-07 10:30:00
 categories: [Projects]
 tags: [supply-chain, forecasting, career, roadmap, warehouse, analytics, immigrants, upskilling]
@@ -141,7 +141,6 @@ comments: true
         <p class="sc-card-sub">Associates · Clerks · Operators · Supervisors</p>
       </div>
     </div>
-    <p class="sc-card-body">You know the floor better than anyone. You understand receiving, putaway, pick-pack, cycle counts, and inventory accuracy from lived experience. This roadmap shows you how to translate that into analytics.</p>
   </div>
   <div class="sc-card">
     <div class="sc-card-header">
@@ -151,7 +150,6 @@ comments: true
         <p class="sc-card-sub">Store Associates · Department Leads · Receivers</p>
       </div>
     </div>
-    <p class="sc-card-body">You deal with stock replenishment, shrinkage, planograms, and demand variability every single shift. That is supply chain analytics — you just haven't been given the tools to document it yet.</p>
   </div>
   <div class="sc-card">
     <div class="sc-card-header">
@@ -161,7 +159,6 @@ comments: true
         <p class="sc-card-sub">Drivers · Dispatchers · Coordinators · 3PL Staff</p>
       </div>
     </div>
-    <p class="sc-card-body">On-time delivery, route efficiency, carrier performance, load planning — you live inside the KPIs that logistics analysts spend their careers trying to model. Your context is the starting point.</p>
   </div>
   <div class="sc-card">
     <div class="sc-card-header">
@@ -171,7 +168,15 @@ comments: true
         <p class="sc-card-sub">Line Workers · Quality Technicians · Planners</p>
       </div>
     </div>
-    <p class="sc-card-body">Production scheduling, yield rates, downtime tracking, and quality defect patterns are all data problems. If you have been tracking these on paper or in your head, this roadmap helps you turn that into a skill set.</p>
+  </div>
+  <div class="sc-card">
+    <div class="sc-card-header">
+      <div class="sc-card-icon bg-purple-soft">🎓</div>
+      <div>
+        <p class="sc-card-title">Students & Enthusists</p>
+        <p class="sc-card-sub">Students · Someone looking for Career Transition ·Early Career</p>
+      </div>
+    </div>
   </div>
 </div>
 
