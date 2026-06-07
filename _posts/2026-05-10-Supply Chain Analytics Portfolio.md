@@ -97,7 +97,7 @@ comments: true
   <p class="sc-story-text">
     Most analytics portfolios are built by people who have never touched a pallet, worked a WMS, or made a same-day inventory decision under pressure. <strong>This one is different.</strong><br><br>
     Every project here is grounded in a problem that warehouse workers, coordinators, and operations staff deal with daily — stockouts, receiving backlogs, forecast misses, slow-moving SKUs, carrier delays. The goal is not just to show technical skill. <strong>It is to show that your floor experience is the foundation of great supply chain analytics</strong> — and that anyone in operations can learn to build this.<br><br>
-    Each project in this portfolio maps directly to a stage in the <a href="" style="color:var(--link-color);text-decoration:none;font-weight:600;">Floor to Forecast roadmap ↗</a>. If you are following the roadmap, these are the deliverables.
+    Each project in this portfolio maps directly to a stage in the <a href="#" style="color:var(--link-color);text-decoration:none;font-weight:600;">Floor to Forecast roadmap ↗</a>. If you are following the roadmap, these are the deliverables.
   </p>
 </div>
 
