@@ -291,7 +291,7 @@ comments: true
     </thead>
     <tbody>
       <tr class="empty-row">
-        <td colspan="5">⏳ First update coming end of April 2026 — check back soon.</td>
+        <td colspan="5">⏳ First update coming end of June 2026 — check back soon.</td>
       </tr>
     </tbody>
   </table>
