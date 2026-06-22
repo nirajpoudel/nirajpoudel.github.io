@@ -565,44 +565,27 @@ title: About
 <div class="ab-timeline">
   <div class="ab-tl-item">
     <div class="ab-tl-header">
-      <p class="ab-tl-role">Operations &amp; Logistics Coordinator</p>
+      <p class="ab-tl-role">Supply Chain &amp; Operations Analyst</p>
       <span class="ab-tl-date">Aug 2025 – Present</span>
     </div>
     <p class="ab-tl-company">CCS · Surrey, BC</p>
     <ul>
-      <li>Handle 25+ inbound and 20+ outbound shipments daily, manage and optimize inventory, forecast demand on an ongoing basis.</li>
-      <li>Technology: Microsoft Office (Excel, Word, Outlook), Max Legacy ERP, Power BI, RF Scanners</li>
     </ul>
   </div>
+
+
+
   <div class="ab-tl-item">
-  <div class="ab-tl-header">
-    <p class="ab-tl-role">Key Innovations Inc.</p>
-    <span class="ab-tl-date">Jan 2025 – Dec 2025</span>
-  </div>
-  <p class="ab-tl-company">Surrey, BC</p>
-
-  <div style="margin-left:20px; border-left:2px solid #d1d5db; padding-left:16px;">
-    <div class="ab-tl-header" style="margin-top:16px;">
-      <p class="ab-tl-role">Software Engineer — Data &amp; Operations</p>
-      <span class="ab-tl-date">Jun 2025 – Dec 2025</span>
-    </div>
-    <ul>
-      <li>Developed 3 fully functional systems from scratch, saving ~$10,000/month and supporting 35+ employees.</li>
-      <li>Technology: Python, Flask, Azure, SQL, Excel, Power BI, Syncore ERP, Docker</li>
-    </ul>
     <div class="ab-tl-header">
-      <p class="ab-tl-role">AI Specialist &amp; Developer</p>
-      <span class="ab-tl-date">Jan 2025 – Jun 2025</span>
+      <p class="ab-tl-role">Software Engineer -  Data & Operations</p>
+      <span class="ab-tl-date">Jan 2025 – Dec 2025</span>
     </div>
+    <p class="ab-tl-company">Key Innovations Inc. · Surrey, BC</p>
     <ul>
-      <li>Built and deployed AI-powered tools and workflows integrating machine learning and generative AI into business operations.</li>
-      <li>Technology: Python, OpenAI APIs, LangChain, Azure, SQL, Power BI</li>
     </ul>
-
-
-
   </div>
-</div>
+
+
   <div class="ab-tl-item">
     <div class="ab-tl-header">
       <p class="ab-tl-role">Hub Supervisor</p>
@@ -610,10 +593,9 @@ title: About
     </div>
     <p class="ab-tl-company">UPS · Richmond, BC</p>
     <ul>
-      <li>Promoted from loader/unloader to hub supervisor — supported 25,000+ daily package volume, trained 30+ team members, troubleshot 100+ devices.</li>
-      <li>Technology: Microsoft Office, UPS WorldShip, Symphony WMS, RF Scanners</li>
     </ul>
   </div>
+
 </div>
 
 <div class="ab-divider"><div class="ab-divider-line"></div><span class="ab-divider-label">🚀 Projects</span><div class="ab-divider-line"></div></div>
