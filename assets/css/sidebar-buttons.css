@@ -1,0 +1,163 @@
+/* Sidebar Calendly buttons */
+.sidebar-cta {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Inline icon beside site title */
+.sidebar-name-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 0.35rem;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--body-color);
+  border: 1.5px solid rgba(255,255,255,0.9);
+  text-decoration: none;
+  transition: background-color 120ms ease, transform 100ms ease, box-shadow 120ms ease;
+  transform: translateY(1px); /* nudge slightly down */
+}
+
+.sidebar-name-cta i { font-size: 10px; line-height: 1; }
+
+.sidebar-name-cta:hover, .sidebar-name-cta:focus {
+  background-color: rgba(255,255,255,0.06);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+@media (prefers-color-scheme: light) {
+  .sidebar-name-cta { border-color: var(--border-color); color: var(--body-color); }
+}
+
+/* Keep the site title and the inline Calendly icon on the same line */
+.profile-wrapper .site-title {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.35rem;
+  vertical-align: middle;
+  /* Fine-tune vertical alignment: make title and icon same height and remove extra margins */
+  height: 34px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  /* Prevent wrapping and slightly reduce title size to fit with icon */
+  white-space: nowrap;
+  width: auto !important;
+  max-width: calc(100% - 44px);
+  font-size: 0.98rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-wrapper .site-title + .sidebar-name-cta,
+.sidebar-name-cta {
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}
+
+/* Prevent the header from wrapping the title and icon onto separate lines */
+.profile-wrapper {
+  white-space: nowrap;
+}
+
+.sidebar-cta a {
+  text-align: center;
+}
+
+.sidebar-book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--body-color);
+  border: 1.5px solid rgba(255,255,255,0.9);
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 40px;
+  height: 40px;
+  transition: background-color 120ms ease, transform 100ms ease, box-shadow 120ms ease, opacity 120ms ease;
+}
+
+.sidebar-book-btn:focus,
+.sidebar-book-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  /* subtle fill on hover to indicate clickability */
+  background-color: rgba(255,255,255,0.06);
+  text-decoration: none;
+}
+
+.sidebar-book-btn i {
+  font-size: 0.95rem;
+}
+
+.sidebar-book-btn .btn-text {
+  display: none;
+  margin-left: 6px;
+}
+
+.sidebar-book-btn:focus-visible {
+  outline: 3px solid rgba(0,0,0,0.06);
+  outline-offset: 2px;
+}
+
+/* Mobile: stack buttons full width */
+@media (max-width: 767px) {
+  .sidebar-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar-cta a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* show full text button on mobile */
+  .sidebar-book-btn {
+    height: auto;
+    min-width: 100%;
+    margin-left: 0.35rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .sidebar-book-btn .btn-text {
+    display: inline;
+  }
+}
+
+/* Desktop: keep buttons inline but compact */
+@media (min-width: 768px) {
+  .sidebar-cta a {
+    white-space: nowrap;
+  }
+}
+
+/* Light-mode fallback: use theme border color so border remains visible */
+@media (prefers-color-scheme: light) {
+  .sidebar-book-btn {
+    border-color: var(--border-color);
+    background: transparent;
+    color: var(--body-color);
+  }
+
+  .sidebar-book-btn:focus,
+  .sidebar-book-btn:hover {
+    background-color: rgba(0,0,0,0.03);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  }
+}
