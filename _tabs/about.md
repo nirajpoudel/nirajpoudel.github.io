@@ -5,10 +5,10 @@ title: About
 ---
 
 <style>
-/* ── About Page — Full dark/light mode via Chirpy CSS variables ── */
+/* ── About Page — Brand aligned with the site palette ── */
 
 .ab-hero-banner {
-  background: linear-gradient(135deg, #0a2540 0%, #1a3a5c 55%, #0d7377 100%);
+  background: linear-gradient(135deg, #EE460F 0%, #FF5A1F 55%, #D63D0C 100%);
   border-radius: 16px;
   padding: 48px 36px 40px;
   margin: 8px 0 40px;
@@ -27,7 +27,7 @@ title: About
   position: absolute;
   top: -40px; right: -40px;
   width: 220px; height: 220px;
-  background: radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(243,243,243,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 .ab-hero-eyebrow {
@@ -36,8 +36,8 @@ title: About
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #10b981;
-  border: 1px solid rgba(16,185,129,0.4);
+  color: #F3F3F3;
+  border: 1px solid rgba(243,243,243,0.24);
   padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 14px;
@@ -69,7 +69,7 @@ title: About
   display: inline-block;
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: #22c55e;
+  background: #F3F3F3;
   margin-right: 5px;
   animation: ab-blink 2.2s ease-in-out infinite;
 }
@@ -101,8 +101,8 @@ title: About
   background: rgba(255,255,255,0.18);
 }
 .ab-link-btn.primary {
-  background: #10b981;
-  border-color: #10b981;
+  background: rgba(243,243,243,0.14);
+  border-color: rgba(243,243,243,0.28);
 }
 .ab-link-btn.primary:hover { opacity: 0.88; }
 
@@ -110,7 +110,7 @@ title: About
 .ab-mission {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-left: 4px solid #10b981;
+  border-left: 4px solid #EE460F;
   border-radius: 14px;
   padding: 24px 24px 20px;
   margin: 0 0 8px;
@@ -120,7 +120,7 @@ title: About
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #10b981;
+  color: #FF5A1F;
   margin: 0 0 10px;
 }
 .ab-mission-text {
@@ -171,7 +171,7 @@ title: About
   position: absolute;
   left: 0; top: 10px; bottom: 10px;
   width: 1px;
-  background: linear-gradient(to bottom, #1a6faf, #0d7377, #10b981);
+  background: linear-gradient(to bottom, #EE460F, #FF5A1F, #D63D0C);
 }
 .ab-tl-item {
   position: relative;
@@ -266,14 +266,14 @@ title: About
   flex-shrink: 0;
 }
 .ab-badge-live {
-  background: rgba(34,197,94,0.15);
-  color: #22c55e;
-  border: 1px solid rgba(34,197,94,0.35);
+  background: rgba(238,70,15,0.14);
+  color: #EE460F;
+  border: 1px solid rgba(238,70,15,0.26);
 }
 .ab-badge-wip {
-  background: rgba(234,179,8,0.15);
-  color: #eab308;
-  border: 1px solid rgba(234,179,8,0.35);
+  background: rgba(255,90,31,0.14);
+  color: #FF5A1F;
+  border: 1px solid rgba(255,90,31,0.26);
 }
 .ab-proj-desc {
   font-size: 0.82rem;
@@ -388,9 +388,9 @@ title: About
   font-weight: 700;
   padding: 2px 8px;
   border-radius: 20px;
-  background: rgba(234,179,8,0.15);
-  color: #eab308;
-  border: 1px solid rgba(234,179,8,0.35);
+  background: rgba(255,90,31,0.14);
+  color: #FF5A1F;
+  border: 1px solid rgba(255,90,31,0.26);
   margin-top: 6px;
 }
 
@@ -476,7 +476,7 @@ title: About
 
 /* ── CLOSING CTA ── */
 .ab-cta {
-  background: linear-gradient(135deg, #0a2540 0%, #0d7377 100%);
+  background: linear-gradient(135deg, #EE460F 0%, #D63D0C 100%);
   border-radius: 14px;
   padding: 36px 28px;
   margin: 44px 0 8px;
@@ -496,7 +496,7 @@ title: About
 }
 .ab-cta-divider {
   width: 40px; height: 2px;
-  background: #10b981;
+  background: #FF5A1F;
   border-radius: 2px;
   margin: 14px auto;
 }
@@ -505,7 +505,7 @@ title: About
   align-items: center;
   gap: 7px;
   padding: 9px 20px;
-  background: #10b981;
+  background: #FF5A1F;
   color: #fff !important;
   font-size: 0.85rem;
   font-weight: 700;
@@ -516,7 +516,7 @@ title: About
 }
 .ab-cta-btn:hover { opacity: 0.85; }
 .ab-cta-btn.outline {
-  background: rgba(255,255,255,0.1);
+  background: rgba(243,243,243,0.12);
   border: 1px solid rgba(255,255,255,0.3);
 }
 

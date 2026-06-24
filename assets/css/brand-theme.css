@@ -1,0 +1,268 @@
+:root {
+  color-scheme: dark;
+  --brand-primary: #EE460F;
+  --brand-bright: #FF5A1F;
+  --brand-deep: #D63D0C;
+  --brand-cream: #F3F3F3;
+  --brand-muted: #959892;
+  --brand-dark: #0A0909;
+  --brand-black: #010000;
+  --main-bg: #0A0909;
+  --card-bg: rgba(243, 243, 243, 0.06);
+  --sidebar-bg: rgba(243, 243, 243, 0.08);
+  --border-color: rgba(238, 70, 15, 0.24);
+  --body-color: rgba(243, 243, 243, 0.86);
+  --heading-color: #F3F3F3;
+  --link-color: #FF5A1F;
+  --link-hover-color: #F3F3F3;
+  --btn-bg: linear-gradient(135deg, #EE460F 0%, #D63D0C 100%);
+  --btn-color: #F3F3F3;
+  --selection-bg: rgba(238, 70, 15, 0.3);
+  --selection-color: #F3F3F3;
+  --surface-2: rgba(238, 70, 15, 0.08);
+}
+
+:root[data-mode="light"],
+html[data-mode="light"],
+html[data-mode="light"] body {
+  color-scheme: light;
+  --main-bg: #fffdf9;
+  --card-bg: #ffffff;
+  --sidebar-bg: #faf7f2;
+  --border-color: rgba(238, 70, 15, 0.2);
+  --body-color: #222222;
+  --heading-color: #0A0909;
+  --link-color: #EE460F;
+  --link-hover-color: #D63D0C;
+  --btn-bg: linear-gradient(135deg, #EE460F 0%, #FF5A1F 100%);
+  --btn-color: #ffffff;
+  --selection-bg: rgba(238, 70, 15, 0.18);
+  --selection-color: #0A0909;
+  --surface-2: rgba(238, 70, 15, 0.08);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-mode="dark"]) {
+    color-scheme: light;
+    --main-bg: #fffdf9;
+    --card-bg: #ffffff;
+    --sidebar-bg: #faf7f2;
+    --border-color: rgba(238, 70, 15, 0.2);
+    --body-color: #222222;
+    --heading-color: #0A0909;
+    --link-color: #EE460F;
+    --link-hover-color: #D63D0C;
+    --btn-bg: linear-gradient(135deg, #EE460F 0%, #FF5A1F 100%);
+    --btn-color: #ffffff;
+    --selection-bg: rgba(238, 70, 15, 0.18);
+    --selection-color: #0A0909;
+    --surface-2: rgba(238, 70, 15, 0.08);
+  }
+}
+
+html,
+body {
+  background-color: var(--main-bg) !important;
+  color: var(--body-color) !important;
+}
+
+body,
+.main-wrapper,
+.main-content,
+.page-content,
+.post-content,
+.post-preview,
+.sidebar,
+.topbar,
+.footer,
+.post,
+.page {
+  background-color: var(--main-bg) !important;
+  color: var(--body-color) !important;
+}
+
+::selection {
+  background: var(--selection-bg) !important;
+  color: var(--selection-color) !important;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.post-title,
+.page-title,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  color: var(--heading-color) !important;
+}
+
+body p,
+body li,
+body td,
+body th,
+body dd,
+body blockquote,
+.post-content p,
+.post-content li,
+.post-content td,
+.post-content th,
+.post-content dd,
+.post-content blockquote,
+.page-content p,
+.page-content li,
+.page-content td,
+.page-content th,
+.page-content dd,
+.page-content blockquote {
+  color: var(--body-color) !important;
+}
+
+body strong,
+body b,
+.post-content strong,
+.post-content b,
+.page-content strong,
+.page-content b {
+  color: var(--brand-bright) !important;
+}
+
+body a,
+.post-content a,
+.page-content a,
+.post-preview a,
+.pagination a,
+.toc a,
+.tag,
+.category,
+.badge,
+.btn,
+button {
+  color: var(--link-color) !important;
+}
+
+body a:hover,
+.post-content a:hover,
+.page-content a:hover,
+.post-preview a:hover,
+.pagination a:hover,
+.toc a:hover,
+.tag:hover,
+.category:hover,
+.badge:hover,
+.btn:hover,
+button:hover {
+  color: var(--link-hover-color) !important;
+}
+
+.sidebar .site-title,
+.sidebar .site-subtitle,
+.sidebar .nav-link,
+.sidebar .nav-item .nav-link,
+.sidebar .nav-item > a {
+  color: var(--heading-color) !important;
+}
+
+.sidebar .nav-link {
+  border-left: 3px solid transparent;
+  border-radius: 10px;
+  padding: 0.48rem 0.7rem;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus,
+.sidebar .nav-link.active,
+.sidebar .nav-item.active > .nav-link,
+.sidebar .nav-item .nav-link[aria-current="page"] {
+  color: var(--link-color) !important;
+  background: rgba(238, 70, 15, 0.12) !important;
+  border-left-color: var(--brand-primary) !important;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
+  transform: translateX(2px);
+}
+
+.post-content a,
+.page-content a {
+  text-decoration-color: rgba(238, 70, 15, 0.5) !important;
+}
+
+.post-content blockquote,
+.page-content blockquote {
+  border-left: 4px solid var(--brand-primary) !important;
+  background: var(--surface-2) !important;
+  color: var(--body-color) !important;
+}
+
+.post-content code,
+.post-content pre,
+.page-content code,
+.page-content pre {
+  background: rgba(238, 70, 15, 0.1) !important;
+  color: var(--brand-deep) !important;
+  border: 1px solid rgba(238, 70, 15, 0.2) !important;
+}
+
+.post-content table th,
+.page-content table th {
+  background: var(--surface-2) !important;
+  color: var(--heading-color) !important;
+}
+
+.post-content table td,
+.post-content table th,
+.page-content table td,
+.page-content table th {
+  border-color: var(--border-color) !important;
+}
+
+.btn,
+button,
+.sidebar-book-btn,
+.sidebar-name-cta {
+  color: var(--btn-color) !important;
+  background: var(--btn-bg) !important;
+  border-color: rgba(238, 70, 15, 0.35) !important;
+}
+
+.btn:hover,
+button:hover,
+.sidebar-book-btn:hover,
+.sidebar-name-cta:hover {
+  color: var(--btn-color) !important;
+  background: linear-gradient(135deg, #FF5A1F 0%, #EE460F 100%) !important;
+}
+
+.tag,
+.category,
+.badge,
+.pill,
+.chip {
+  color: var(--heading-color) !important;
+  background: rgba(238, 70, 15, 0.12) !important;
+  border: 1px solid rgba(238, 70, 15, 0.2) !important;
+}
+
+.text-blue,
+.text-teal,
+.text-green,
+.text-orange,
+.text-red,
+.text-purple {
+  color: var(--link-color) !important;
+}

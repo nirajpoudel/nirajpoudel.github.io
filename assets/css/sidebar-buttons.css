@@ -8,6 +8,15 @@
   justify-content: flex-end;
 }
 
+.sidebar-cta a,
+.sidebar-cta button,
+.sidebar-book-btn,
+.sidebar-name-cta {
+  color: var(--btn-color, #F3F3F3) !important;
+  background: var(--btn-bg, linear-gradient(135deg, #EE460F 0%, #D63D0C 100%)) !important;
+  border-color: rgba(238, 70, 15, 0.35) !important;
+}
+
 /* Inline icon beside site title */
 .sidebar-name-cta {
   display: inline-flex;
@@ -17,38 +26,32 @@
   height: 20px;
   margin-left: 0.35rem;
   border-radius: 999px;
-  background: transparent;
-  color: var(--body-color);
-  border: 1.5px solid rgba(255,255,255,0.9);
+  background: rgba(238, 70, 15, 0.08);
+  color: var(--link-color);
+  border: 1.5px solid var(--border-color);
   text-decoration: none;
   transition: background-color 120ms ease, transform 100ms ease, box-shadow 120ms ease;
-  transform: translateY(1px); /* nudge slightly down */
+  transform: translateY(1px);
 }
 
 .sidebar-name-cta i { font-size: 10px; line-height: 1; }
 
 .sidebar-name-cta:hover, .sidebar-name-cta:focus {
-  background-color: rgba(255,255,255,0.06);
+  background-color: rgba(238, 70, 15, 0.14);
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
-@media (prefers-color-scheme: light) {
-  .sidebar-name-cta { border-color: var(--border-color); color: var(--body-color); }
-}
-
-/* Keep the site title and the inline Calendly icon on the same line */
+/* Keep the site title and the inline icon on the same line */
 .profile-wrapper .site-title {
   display: inline-flex !important;
   align-items: center;
   gap: 0.35rem;
   vertical-align: middle;
-  /* Fine-tune vertical alignment: make title and icon same height and remove extra margins */
   height: 34px;
   padding: 0;
   margin: 0;
   line-height: 1;
-  /* Prevent wrapping and slightly reduce title size to fit with icon */
   white-space: nowrap;
   width: auto !important;
   max-width: calc(100% - 44px);
@@ -79,8 +82,8 @@
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
   background: transparent;
-  color: var(--body-color);
-  border: 1.5px solid rgba(255,255,255,0.9);
+  color: var(--link-color);
+  border: 1.5px solid var(--border-color);
   font-weight: 700;
   font-family: inherit;
   font-size: 0.95rem;
@@ -96,8 +99,7 @@
   opacity: 0.95;
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-  /* subtle fill on hover to indicate clickability */
-  background-color: rgba(255,255,255,0.06);
+  background-color: rgba(238, 70, 15, 0.08);
   text-decoration: none;
 }
 
@@ -111,7 +113,7 @@
 }
 
 .sidebar-book-btn:focus-visible {
-  outline: 3px solid rgba(0,0,0,0.06);
+  outline: 3px solid rgba(238, 70, 15, 0.18);
   outline-offset: 2px;
 }
 
@@ -127,7 +129,6 @@
     width: 100%;
   }
 
-  /* show full text button on mobile */
   .sidebar-book-btn {
     height: auto;
     min-width: 100%;
@@ -144,20 +145,5 @@
 @media (min-width: 768px) {
   .sidebar-cta a {
     white-space: nowrap;
-  }
-}
-
-/* Light-mode fallback: use theme border color so border remains visible */
-@media (prefers-color-scheme: light) {
-  .sidebar-book-btn {
-    border-color: var(--border-color);
-    background: transparent;
-    color: var(--body-color);
-  }
-
-  .sidebar-book-btn:focus,
-  .sidebar-book-btn:hover {
-    background-color: rgba(0,0,0,0.03);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.04);
   }
 }
